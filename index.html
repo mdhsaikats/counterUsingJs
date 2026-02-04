@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Counter</title>
+</head>
+<body>
+
+    <div class="min-h-screen flex justify-center items-center">
+        <div class="flex flex-col items-start border-2 border-black w-[300px] h-[350px] rounded-xl p-2">
+            <div class="flex justify-center items-center rounded-md border-2 border-black w-full h-16 text-2xl font-bold mb-2">
+                <p id="count">0</p>
+            </div>
+            <div class="flex flex-col gap-2 w-full">
+                <button onclick="increaseCount()" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded border border-black">+</button>
+                <button onclick="decreaseCount()" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded border border-black">-</button>
+                <button onclick="resetCount()" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded border border-black">Reset</button>
+                <button onclick="saveCount()" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded border border-black">Save</button>
+                <button onclick="loadCount()" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded border border-black">Load</button>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="fixed bottom-0 left-0 w-full bg-gray-800 text-white text-center py-4">
+        <p>Made with love by Saikat ❤️</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
